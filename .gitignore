@@ -3,6 +3,6 @@ dest/
 cwd/
 node_modules/
 src/forms/
-src/portfolio-detail.html
+src/portfolio-details.html
 
 package-lock.json
