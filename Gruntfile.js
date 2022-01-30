@@ -47,18 +47,48 @@ module.exports = function(grunt) {
     copy: {
       imgs:{
         files: 
-        [{
+        [
+          {
             cwd: 'src/assets/img',  // set working folder / root to copy
             src: '**/*',           // copy all files and subfolders
             dest: 'dest/assets/img',    // destination folder
             expand: true           // required when using cwd
-        }],
+          },
+      ],
+      },
+      robot:{
+        files : [
+          {
+            cwd: 'src',
+            src:'robots.txt',
+            dest:  'dest',
+            expand: true
+          },
+        ]
+      },
+      sitemap : {
+        files : [
+          {
+            cwd : 'src',
+            src : 'sitemap.xml',
+            dest : 'dest',
+            expand : true,
+          }
+        ]
       },
       vendor:{
         files:[{
           cwd: 'src/assets/vendor',  // set working folder / root to copy
           src: '**/*',           // copy all files and subfolders
           dest: 'dest/assets/vendor',    // destination folder
+          expand: true           // required when using cwd
+        }]
+      },
+      icons:{
+        files:[{
+          cwd: 'src/assets/icons',  // set working folder / root to copy
+          src: '**/*',           // copy all files and subfolders
+          dest: 'dest/assets/icons',    // destination folder
           expand: true           // required when using cwd
         }]
       },

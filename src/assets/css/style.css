@@ -1045,3 +1045,42 @@ section {
 #footer .credits {
   font-size: 13px;
 }
+
+#blogId{
+  position: fixed;
+  right: 30px;
+  top: 30px;
+  border-radius: 30px;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  min-width: 110px;
+}
+
+.githubLinkIcon{
+  width: 100px;
+}
+.linkPreview{
+  background-color: #f0f0f0;
+  border-radius: 50px;
+
+}
+.linkPreview .p-2{
+  word-break: break-all;
+}
+
+.linkPreview:hover{
+  -webkit-animation: color_change 1s 1;
+  -moz-animation: color_change 1s 1;
+  -ms-animation: color_change 1s 1;
+  -o-animation: color_change 1s 1;
+  animation: color_change 1s 1;
+}
+
+@keyframes color_change{
+  100% {
+    background-color: #728394;
+    color:#fff;
+  }
+  
+}

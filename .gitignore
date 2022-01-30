@@ -4,5 +4,6 @@ cwd/
 node_modules/
 src/forms/
 src/portfolio-details.html
+dest.zip
 
 package-lock.json
